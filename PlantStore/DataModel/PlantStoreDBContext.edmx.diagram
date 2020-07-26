@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="370b6412fc9348f4b742a4fd513f4249" Name="Diagram1">
+        <EntityTypeShape EntityType="PlantsModel.Menu" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlantsModel.SubMenu" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlantsModel.User" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlantsModel.Product" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="PlantsModel.FK_SubMenu_Menu" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PlantsModel.BillingContact" Width="1.5" PointX="0.5" PointY="8.875" />
+        <AssociationConnector Association="PlantsModel.FK_BillingContact_Users" />
+        <EntityTypeShape EntityType="PlantsModel.ShippingContact" Width="1.5" PointX="3.25" PointY="8.75" />
+        <AssociationConnector Association="PlantsModel.FK_ShippingContact_Users" />
+        <EntityTypeShape EntityType="PlantsModel.Order" Width="1.5" PointX="5.375" PointY="4.875" />
+        <EntityTypeShape EntityType="PlantsModel.OrderBillingContact" Width="1.5" PointX="7.625" PointY="7.75" />
+        <EntityTypeShape EntityType="PlantsModel.OrderShippingContact" Width="1.5" PointX="8.125" PointY="3.875" />
+        <AssociationConnector Association="PlantsModel.FK_OrderBillingContact_Orders" />
+        <AssociationConnector Association="PlantsModel.FK_OrderShippingContact_Orders" />
+        <EntityTypeShape EntityType="PlantsModel.OrderDetail" Width="1.5" PointX="7.625" PointY="0.875" />
+        <AssociationConnector Association="PlantsModel.FK_OrderDetails_Orders" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
